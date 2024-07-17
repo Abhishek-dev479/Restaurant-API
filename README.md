@@ -12,7 +12,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Abhishek-dev479/Restaurant-API.git
+    git clone -b master https://github.com/Abhishek-dev479/Restaurant-API.git
     cd Restaurant-API
     ```
 
