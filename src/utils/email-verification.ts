@@ -42,7 +42,7 @@ const sendTestEmail = async (to: string, password: string): Promise<SentMessageI
         });
 
         const from = MY_EMAIL;
-        let code = 823545; // Example code, you should generate this dynamically
+        let code = 823545; 
         const subject = 'Email Verification By Incognito';
         const html = `
             <p>Hey ${to},</p>
