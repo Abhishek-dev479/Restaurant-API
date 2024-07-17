@@ -1,4 +1,4 @@
-# Your Project Name
+# Restaurant-API
 
 ## Setup Instructions
 
@@ -12,8 +12,8 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/<your-username>/<your-repo-name>.git
-    cd <your-repo-name>
+    git clone https://github.com/Abhishek-dev479/Restaurant-API.git
+    cd Restaurant-API
     ```
 
 2. Install dependencies:
@@ -26,6 +26,10 @@
 3. Create a `.env` file in the root directory and add the following environment variables:
     ```plaintext
     # .env file example
+
+    # Github OAuth Credentials
+    CLIENT_ID=<your-client-id>
+    CLIENT_SECRET_KEY=<your-client-secret>
 
     # Google OAuth Credentials
     CLIENT_ID_EMAIL=<your-client-id>
@@ -55,24 +59,15 @@
 ### Testing
 To test the application, follow these steps:
 
-1. Register a new user by sending a POST request to `/auth/register` with the following JSON body:
+1. Log in as Admin user by sending a POST request to `/auth/login` with the following JSON body:
     ```json
     {
-      "email": "test@example.com",
-      "username": "testuser",
-      "password": "password123"
+      "email": "admin@gmail.com",
+      "password": "adminpassword"
     }
     ```
 
-2. Log in with the registered user by sending a POST request to `/auth/login` with the following JSON body:
-    ```json
-    {
-      "email": "test@example.com",
-      "password": "password123"
-    }
-    ```
-
-3. Use the obtained JWT token for subsequent requests that require authentication.
+2. Use the obtained JWT token for subsequent requests that require authentication.
 
 ### API Documentation
 For Comprehensive API Documentation : https://documenter.getpostman.com/view/27904998/2sA3kRJ4DE
